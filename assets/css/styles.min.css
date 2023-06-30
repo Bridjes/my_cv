@@ -7,7 +7,6 @@
 }
 .cv {
     margin: 0;
-    background-image: url("/assets/img/wall3.jpeg");
     background-size: contain;
     background-attachment: fixed;
     padding-bottom: 20px;
@@ -170,7 +169,6 @@ section .exps .exp .border-transperent{
     grid-column:1/span 2;
     height:10px;
     border-radius:10px;
-    background-image:url("/assets/img/wall3.jpeg");
     background-size: contain;
     background-attachment: fixed
 }
