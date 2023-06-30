@@ -1,0 +1,288 @@
+@font-face{
+    font-family:FontAwesome;
+    src:url(../../assets/fonts/fontawesome-webfont.eot?h=1881fee9f986fb500f5bdfe938521d06&v=4.7.0) format('embedded-opentype'),url(../../assets/fonts/fontawesome-webfont.eot?h=1881fee9f986fb500f5bdfe938521d06) format('embedded-opentype'),url(../../assets/fonts/fontawesome-webfont.woff2?h=1881fee9f986fb500f5bdfe938521d06&v=4.7.0) format('woff2'),url(../../assets/fonts/fontawesome-webfont.woff?h=1881fee9f986fb500f5bdfe938521d06&v=4.7.0) format('woff'),url(../../assets/fonts/fontawesome-webfont.ttf?h=1881fee9f986fb500f5bdfe938521d06&v=4.7.0) format('truetype'),url(../../assets/fonts/fontawesome-webfont.svg?h=1881fee9f986fb500f5bdfe938521d06&v=4.7.0) format('svg');
+    font-weight:400;
+    font-style:normal;
+    font-display:auto
+}
+.cv {
+    margin: 0;
+    background-image: url("/assets/img/wall3.jpeg");
+    background-size: contain;
+    background-attachment: fixed;
+    padding-bottom: 20px;
+}
+.head {
+    padding: 20px;
+    display: grid;
+    grid-template:350px/300px 5fr;
+    grid-gap:20px;
+    background:rgba(0,0,0,.8)
+}
+.head .photo{
+    width:300px;
+    height:350px;
+    display:flex;
+    justify-content:center
+}
+.head .photo img{
+    max-width:100%;
+    max-height:100%;
+    border-radius:10px;
+    z-index: 100;
+}
+.head .info{
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-end
+}
+.head .info .name{
+    font-family:Roboto,sans-serif;
+    color:#eee;
+    font-weight:bolder;
+    font-size:40px
+}
+.head .info .speciality{
+    font-family:Roboto,sans-serif;
+    background:-webkit-linear-gradient(75deg,#ff8c00,#fff);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    font-size:25px
+}
+.head .info .contacts{
+    margin-top:20px
+}
+.head .info .contacts .contact{
+    margin:5px;
+}
+.head .info .contacts .contact a div {
+    padding-left: 5px;
+}
+.head .info .contacts .contact a {
+    text-decoration:none;
+    display:flex;
+    flex-direction:row;
+    width:180px;
+}
+.head .info .contacts .contact a:hover {
+    text-shadow: 0 0 5px #eeeeee;
+}
+.head .info .contacts .contact i{
+    font-size:30px
+}
+.head .info .contacts .contact .phone{
+    color:#32cd32;
+    font-size:33px
+}
+.head .info .contacts .contact .telegram{
+    color:#1e90ff
+}
+.head .info .contacts .contact .github{
+    color:#eee;
+    font-size:34px
+}
+.head .info .contacts .contact .linkedin{
+    color:#1e90ff;
+    font-size:34px
+}
+.head .info .contacts .contact .envelope{
+    color:#ff0
+}
+.head .info .contacts .contact div{
+    display:flex;
+    align-items:center;
+    font-family:Roboto,sans-serif;
+    text-decoration:none;
+    color:#eee;
+    margin-left:5px
+}
+section{
+    margin:40px 20px 0;
+    background:rgba(0,0,0,.8);
+    border-radius:10px
+}
+section:last-child {
+    margin-bottom: 20px;
+}
+section .name{
+    font-family:Roboto,sans-serif;
+    font-size:25px;
+    font-weight:bolder;
+    background:-webkit-linear-gradient(75deg,#3700ff,#fff);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    text-align:center;
+    padding:10px
+}
+section .text{
+    font-family:Roboto,sans-serif;
+    color:#eee;
+    padding:10px
+}
+section .text-shell{
+    display:grid;
+    grid-template:1fr 1fr/1fr 1fr 1fr;
+    padding-bottom:10px
+}
+section .text-shell .text-block{
+    font-family:Roboto,sans-serif;
+    color:#eee;
+    text-align:center;
+    margin-top:5px
+}
+section .edus,section .exps{
+    padding:10px
+}
+section .exps .exp{
+    display:grid;
+    grid-template:30px 30px 1fr/400px 4fr
+}
+section .exps .exp .exp-name{
+    font-family:Roboto,sans-serif;
+    color:#fff;
+    font-size:30px
+}
+section .exps .exp .exp-speciality{
+    padding-top:10px;
+    grid-column:1/2;
+    font-family:Roboto,sans-serif;
+    color:#ff8c00
+}
+section .exps .exp .exp-term{
+    padding:30px 0 10px;
+    grid-column:1/2;
+    font-family:Roboto,sans-serif;
+    color:#fff;
+    font-size:15px;
+    display:flex
+}
+section .exps .exp .exp-description{
+    grid-column:2;
+    grid-row:1/span 3;
+    font-family:Roboto,sans-serif;
+    color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:flex-start
+}
+section .edus .edu .border-transperent,
+section .exps .exp .border-transperent{
+    grid-column:1/span 2;
+    height:10px;
+    border-radius:10px;
+    background-image:url("/assets/img/wall3.jpeg");
+    background-size: contain;
+    background-attachment: fixed
+}
+section .edus .edu{
+    padding:10px 0;
+    display:grid;
+    grid-template:35px 35px 35px/100px 5fr
+}
+section .edus .edu:last-child{
+    padding: 10px 0 0 0;
+}
+section .edus .edu .edu-img{
+    grid-column:1;
+    color:#fff;
+    width:100px;
+    height:100px
+}
+section .edus .edu .edu-img img{
+    max-width:95%;
+    max-height:95%
+}
+section .edus .edu .edu-name{
+    font-family:Roboto,sans-serif;
+    color:#fff;
+    font-size:20px;
+    grid-column:2
+}
+section .edus .edu .edu-speciality{
+    font-family:Roboto,sans-serif;
+    color:#ff8c00;
+    grid-column:2
+}
+section .edus .edu .edu-term{
+    font-family:Roboto,sans-serif;
+    font-size:15px;
+    grid-column:2;
+    color:#fff
+}
+@media (max-width: 745px) {
+    .head .photo {
+        width:200px;
+        height:250px;
+    }
+    .head {
+        grid-template:250px/200px 5fr;
+    }
+    .head .info .name{
+        font-size:31px
+    }
+    .head .info .speciality{
+        font-size:20px
+    }
+    .head .info .contacts .contact a {
+        width:180px;
+    }
+    .head .info .contacts .contact i{
+        font-size:25px
+    }
+    .head .info .contacts .contact .phone{
+        font-size:27px
+    }
+    .head .info .contacts .contact .github{
+        font-size:28px
+    }
+    .head .info .contacts .contact .linkedin{
+        font-size:28px
+    }
+    section .name{
+        font-size:20px;
+    }
+    section .text{
+        font-size:15px;
+    }
+    section .text-shell .text-block{
+        font-size:15px;
+    }
+    section .exps .exp{
+        grid-template:30px 30px 1fr/220px 4fr
+    }
+    section .exps .exp .exp-name{
+        font-size:20px
+    }
+    section .exps .exp .exp-speciality{
+        padding: 0;
+        font-size:15px
+    }
+    section .exps .exp .exp-term{
+        align-items: flex-end;
+        padding:30px 0 10px;
+        font-size:14px;
+    }
+    section .exps .exp .exp-description{
+        font-size:14px
+    }
+    section .edus .edu{
+        grid-template:30px 30px 30px/90px 5fr
+    }
+    section .edus .edu .edu-img{
+        width:90px;
+        height:90px;
+    }
+    section .edus .edu .edu-img img{
+        max-width:95%;
+        max-height:95%
+    }
+    section .edus .edu .edu-name{
+        font-size:15px;
+    }
+    section .edus .edu .edu-speciality{
+        font-size:14px;
+    }
+    section .edus .edu .edu-term{
+        font-size:14px;
+    }
+}
