@@ -1,12 +1,6 @@
-@font-face{
-    font-family:FontAwesome;
-    src:url(../../assets/fonts/fontawesome-webfont.eot?h=1881fee9f986fb500f5bdfe938521d06&v=4.7.0) format('embedded-opentype'),url(../../assets/fonts/fontawesome-webfont.eot?h=1881fee9f986fb500f5bdfe938521d06) format('embedded-opentype'),url(../../assets/fonts/fontawesome-webfont.woff2?h=1881fee9f986fb500f5bdfe938521d06&v=4.7.0) format('woff2'),url(../../assets/fonts/fontawesome-webfont.woff?h=1881fee9f986fb500f5bdfe938521d06&v=4.7.0) format('woff'),url(../../assets/fonts/fontawesome-webfont.ttf?h=1881fee9f986fb500f5bdfe938521d06&v=4.7.0) format('truetype'),url(../../assets/fonts/fontawesome-webfont.svg?h=1881fee9f986fb500f5bdfe938521d06&v=4.7.0) format('svg');
-    font-weight:400;
-    font-style:normal;
-    font-display:auto
-}
 .cv {
     margin: 0;
+    background-image: url("https://raw.githubusercontent.com/Bridjes/my_cv/master/assets/img/wall3.jpeg");
     background-size: contain;
     background-attachment: fixed;
     padding-bottom: 20px;
@@ -169,6 +163,7 @@ section .exps .exp .border-transperent{
     grid-column:1/span 2;
     height:10px;
     border-radius:10px;
+    background-image:url("https://raw.githubusercontent.com/Bridjes/my_cv/master/assets/img/wall3.jpeg");
     background-size: contain;
     background-attachment: fixed
 }
@@ -208,12 +203,19 @@ section .edus .edu .edu-term{
     color:#fff
 }
 @media (max-width: 745px) {
-    .head .photo {
-        width:200px;
-        height:250px;
+    .cv {
+        background-image: url("https://raw.githubusercontent.com/Bridjes/my_cv/master/assets/img/wall3_rotate.jpeg");
+    }
+    section .edus .edu .border-transperent,
+    section .exps .exp .border-transperent{
+        background-image: url("https://raw.githubusercontent.com/Bridjes/my_cv/master/assets/img/wall3_rotate.jpeg");
     }
     .head {
         grid-template:250px/200px 5fr;
+    }
+    .head .photo {
+        width:200px;
+        height:250px;
     }
     .head .info .name{
         font-size:31px
@@ -278,6 +280,88 @@ section .edus .edu .edu-term{
         font-size:15px;
     }
     section .edus .edu .edu-speciality{
+        font-family:Roboto,sans-serif;
+        font-size:14px;
+    }
+    section .edus .edu .edu-term{
+        font-size:14px;
+    }
+}
+@media (max-width: 490px) {
+    .head {
+        grid-template:200px/150px 5fr;
+    }
+    .head .photo {
+        width:150px;
+        height:200px;
+    }
+    .head .info .name{
+        font-size:20px
+    }
+    .head .info .speciality{
+        font-size:14px
+    }
+    .head .info .contacts{
+        margin-top:5px
+    }
+    .head .info .contacts .contact a {
+        width:180px;
+    }
+    .head .info .contacts .contact i{
+        font-size:24px
+    }
+    .head .info .contacts .contact .phone{
+        font-size:25px
+    }
+    .head .info .contacts .contact .github{
+        font-size:26px
+    }
+    .head .info .contacts .contact .linkedin{
+        font-size:26px
+    }
+    section .name{
+        font-size:20px;
+    }
+    section .text{
+        font-size:15px;
+    }
+    section .text-shell .text-block{
+        font-size:15px;
+    }
+    section .exps .exp{
+        grid-template:30px 30px 1fr/220px 4fr
+    }
+    section .exps .exp .exp-name{
+        font-size:20px
+    }
+    section .exps .exp .exp-speciality{
+        padding: 0;
+        font-size:15px
+    }
+    section .exps .exp .exp-term{
+        align-items: flex-end;
+        padding:30px 0 10px;
+        font-size:14px;
+    }
+    section .exps .exp .exp-description{
+        font-size:14px
+    }
+    section .edus .edu{
+        grid-template:30px 30px 30px/90px 5fr
+    }
+    section .edus .edu .edu-img{
+        width:90px;
+        height:90px;
+    }
+    section .edus .edu .edu-img img{
+        max-width:95%;
+        max-height:95%
+    }
+    section .edus .edu .edu-name{
+        font-size:15px;
+    }
+    section .edus .edu .edu-speciality{
+        font-family:Roboto,sans-serif;
         font-size:14px;
     }
     section .edus .edu .edu-term{
