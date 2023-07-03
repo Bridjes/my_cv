@@ -1,9 +1,8 @@
 .cv {
     margin: 0;
     background-image: url("https://raw.githubusercontent.com/Bridjes/my_cv/master/assets/img/wall3.jpeg");
-    background-size: cover;
+    background-size: 100% 100%;
     background-attachment: fixed;
-    padding-bottom: 20px;
 }
 .head {
     padding: 20px;
@@ -93,9 +92,6 @@ section{
     margin:40px 20px 0;
     background:rgba(0,0,0,.8);
     border-radius:10px
-}
-section:last-child {
-    margin-bottom: 20px;
 }
 section .name{
     font-family:Roboto,sans-serif;
@@ -201,6 +197,9 @@ section .edus .edu .edu-term{
     font-size:15px;
     grid-column:2;
     color:#fff
+}
+.about-me {
+    margin-bottom: 20px;
 }
 @media (max-width: 745px) {
     .head {
