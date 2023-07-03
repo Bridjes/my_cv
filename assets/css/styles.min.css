@@ -265,43 +265,43 @@ section .text-shell .text-block{
     section .text-shell .text-block{
         font-size:15px;
     }
-    section .exps .exp{
+    .exp{
         grid-template:30px 30px 1fr/220px 4fr
     }
-    section .exps .exp .exp-name{
+    .exp .exp-name{
         font-size:20px
     }
-    section .exps .exp .exp-speciality{
+    .exp .exp-speciality{
         padding: 0;
         font-size:15px
     }
-    section .exps .exp .exp-term{
+    .exp .exp-term{
         align-items: flex-end;
         padding:30px 0 10px;
         font-size:14px;
     }
-    section .exps .exp .exp-description{
+    .exp .exp-description{
         font-size:14px
     }
-    section .edus .edu{
+    .edu{
         grid-template:30px 30px 30px/90px 5fr
     }
-    section .edus .edu .edu-img{
+    .edu .edu-img{
         width:90px;
         height:90px;
     }
-    section .edus .edu .edu-img img{
+    .edu .edu-img img{
         max-width:95%;
         max-height:95%
     }
-    section .edus .edu .edu-name{
+    .edu .edu-name{
         font-size:15px;
     }
-    section .edus .edu .edu-speciality{
+    .edu .edu-speciality{
         font-family:Roboto,sans-serif;
         font-size:14px;
     }
-    section .edus .edu .edu-term{
+    .edu .edu-term{
         font-size:14px;
     }
 }
