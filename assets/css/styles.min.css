@@ -204,7 +204,7 @@ section .edus .edu .edu-term{
 @media (max-width: 745px) {
     .cv {
         margin: 0;
-        background-image: linear-gradient(#3700ff, brown, black);
+        background-image: linear-gradient(#3700ff, darkslateblue, black);
         background-size: cover;
         background-attachment: fixed;
     }
