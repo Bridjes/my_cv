@@ -3,6 +3,7 @@
     background-image: url("https://raw.githubusercontent.com/Bridjes/my_cv/master/assets/img/wall3.jpeg");
     background-size: cover;
     background-attachment: fixed;
+    height: 100vh;
 }
 .head {
     padding: 20px;
@@ -109,9 +110,9 @@ section .text{
     padding:10px
 }
 section .text-shell{
-    display:grid;
-    grid-template:1fr 1fr/1fr 1fr 1fr;
-    padding-bottom:10px
+    column-count: 3;
+    column-gap: 1em;
+    padding-bottom: 5px;
 }
 section .text-shell .text-block{
     font-family:Roboto,sans-serif;
@@ -202,12 +203,6 @@ section .edus .edu .edu-term{
     margin-bottom: 20px;
 }
 @media (max-width: 745px) {
-    .cv {
-        margin: 0;
-        background-image: linear-gradient(#3700ff, darkslateblue, black);
-        background-size: cover;
-        background-attachment: fixed;
-    }
     .head {
         grid-template:250px/200px 5fr;
     }
