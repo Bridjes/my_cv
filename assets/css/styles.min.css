@@ -3,7 +3,6 @@
     background-image: url("https://raw.githubusercontent.com/Bridjes/my_cv/master/assets/img/wall3.jpeg");
     background-size: cover;
     background-attachment: fixed;
-    height: 100vh;
 }
 .head {
     padding: 20px;
@@ -91,7 +90,7 @@
 }
 section{
     margin:40px 20px 0;
-    background:rgba(0,0,0,.8);
+    background:rgba(0,0,0,0.8);
     border-radius:10px
 }
 section .name{
@@ -120,25 +119,52 @@ section .text-shell .text-block{
     text-align:center;
     margin-top:5px
 }
-section .edus,section .exps{
+.blinds-first {
+    margin: 40px 20px 10px 20px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+}
+.blinds {
+    margin: 0 20px 10px 20px;
+    border-radius: none;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+}
+.blinds-last {
+    margin: 0 20px 0 20px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+}
+.blinds-first .name {
+    font-family:Roboto,sans-serif;
+    font-size:25px;
+    font-weight:bolder;
+    background:-webkit-linear-gradient(75deg,#3700ff,#fff);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    text-align:center;
     padding:10px
 }
-section .exps .exp{
+.exp{
     display:grid;
-    grid-template:30px 30px 1fr/400px 4fr
+    grid-template:30px 30px 1fr/400px 4fr;
 }
-section .exps .exp .exp-name{
+.exp-name{
     font-family:Roboto,sans-serif;
     color:#fff;
-    font-size:30px
+    font-size:30px;
 }
-section .exps .exp .exp-speciality{
+.exp .exp-speciality{
     padding-top:10px;
     grid-column:1/2;
     font-family:Roboto,sans-serif;
     color:#ff8c00
 }
-section .exps .exp .exp-term{
+.exp .exp-term{
     padding:30px 0 10px;
     grid-column:1/2;
     font-family:Roboto,sans-serif;
@@ -146,7 +172,7 @@ section .exps .exp .exp-term{
     font-size:15px;
     display:flex
 }
-section .exps .exp .exp-description{
+.exp .exp-description{
     grid-column:2;
     grid-row:1/span 3;
     font-family:Roboto,sans-serif;
@@ -155,45 +181,40 @@ section .exps .exp .exp-description{
     align-items:center;
     justify-content:flex-start
 }
-section .edus .edu .border-transperent,
-section .exps .exp .border-transperent{
-    grid-column:1/span 2;
-    height:10px;
-    border-radius:10px;
-    background-image:url("https://raw.githubusercontent.com/Bridjes/my_cv/master/assets/img/wall3.jpeg");
-    background-size: cover;
-    background-attachment: fixed
+.edu .border-transperent,
+.exp .border-transperent{
+    height: 10px;
 }
-section .edus .edu{
+.edu{
     padding:10px 0;
     display:grid;
     grid-template:35px 35px 35px/100px 5fr
 }
-section .edus .edu:last-child{
+.edu:last-child{
     padding: 10px 0 0 0;
 }
-section .edus .edu .edu-img{
+.edu .edu-img{
     grid-column:1;
     color:#fff;
     width:100px;
     height:100px
 }
-section .edus .edu .edu-img img{
+.edu .edu-img img{
     max-width:95%;
     max-height:95%
 }
-section .edus .edu .edu-name{
+.edu .edu-name{
     font-family:Roboto,sans-serif;
     color:#fff;
     font-size:20px;
     grid-column:2
 }
-section .edus .edu .edu-speciality{
+.edu .edu-speciality{
     font-family:Roboto,sans-serif;
     color:#ff8c00;
     grid-column:2
 }
-section .edus .edu .edu-term{
+.edu .edu-term{
     font-family:Roboto,sans-serif;
     font-size:15px;
     grid-column:2;
