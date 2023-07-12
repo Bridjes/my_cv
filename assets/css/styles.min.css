@@ -224,6 +224,9 @@ section .text-shell .text-block{
     margin-bottom: 20px;
 }
 @media (max-width: 745px) {
+    .cv {
+        background-image: url("https://raw.githubusercontent.com/Bridjes/my_cv/master/assets/img/wall4.jpg");
+    }
     .head {
         grid-template:250px/200px 5fr;
     }
@@ -308,6 +311,9 @@ section .text-shell .text-block{
     }
 }
 @media (max-width: 490px) {
+    .cv {
+        background-image: url("https://raw.githubusercontent.com/Bridjes/my_cv/master/assets/img/wall5.jpg");
+    }
     .head {
         grid-template:200px/150px 5fr;
         grid-gap: 10px;
