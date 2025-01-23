@@ -9,7 +9,9 @@
     display: grid;
     grid-template:350px/300px 5fr;
     grid-gap:20px;
-    background:rgba(0,0,0,.8)
+    background-color:rgba(0,0,0, 0.1);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 .head .photo{
     width:300px;
@@ -30,7 +32,8 @@
 }
 .head .info .name{
     font-family:Roboto,sans-serif;
-    color:#eee;
+    color:rgba(255, 255, 255, 0.863);
+    font-weight: normal;
     font-weight:bolder;
     font-size:40px
 }
@@ -85,13 +88,16 @@
     align-items:center;
     font-family:Roboto,sans-serif;
     text-decoration:none;
-    color:#eee;
+    color:rgba(255, 255, 255, 0.863);
+    font-weight: normal;
     margin-left:5px
 }
 section{
     margin:40px 20px 0;
-    background:rgba(0,0,0,0.8);
-    border-radius:10px
+    backdrop-filter: blur(21px);
+    border-radius:10px;
+    background-color:rgba(0,0,0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 section .name{
     font-family:Roboto,sans-serif;
@@ -105,7 +111,9 @@ section .name{
 }
 section .text{
     font-family:Roboto,sans-serif;
-    color:#eee;
+    color:rgba(255, 255, 255, 0.863);
+    font-weight: normal;
+    line-height: 25px;
     padding:10px
 }
 section .text-shell{
@@ -115,7 +123,9 @@ section .text-shell{
 }
 section .text-shell .text-block{
     font-family:Roboto,sans-serif;
-    color:#eee;
+    color:rgba(255, 255, 255, 0.863);
+    font-weight: normal;
+    line-height: 25px;
     text-align:center;
     margin-top:5px
 }
@@ -123,20 +133,26 @@ section .text-shell .text-block{
     margin: 40px 20px 10px 20px;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
-    background: rgba(0, 0, 0, 0.8);
+    background-color:rgba(0,0,0, 0.1);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     padding: 10px;
 }
 .blinds {
     margin: 0 20px 10px 20px;
     border-radius: none;
-    background: rgba(0, 0, 0, 0.8);
+    background-color:rgba(0,0,0, 0.1);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     padding: 10px;
 }
 .blinds-last {
     margin: 0 20px 0 20px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    background: rgba(0, 0, 0, 0.8);
+    background-color:rgba(0,0,0, 0.1);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     padding: 10px;
 }
 .blinds-first .name {
@@ -155,7 +171,9 @@ section .text-shell .text-block{
 }
 .exp-name{
     font-family:Roboto,sans-serif;
-    color:#fff;
+    color:rgba(255, 255, 255, 0.863);
+    font-weight: normal;
+    line-height: 25px;
     font-size:30px;
 }
 .exp .exp-speciality{
@@ -168,7 +186,9 @@ section .text-shell .text-block{
     padding:30px 0 10px;
     grid-column:1/2;
     font-family:Roboto,sans-serif;
-    color:#fff;
+    color:rgba(255, 255, 255, 0.863);
+    font-weight: normal;
+    line-height: 25px;
     font-size:15px;
     display:flex
 }
@@ -176,7 +196,9 @@ section .text-shell .text-block{
     grid-column:2;
     grid-row:1/span 3;
     font-family:Roboto,sans-serif;
-    color:#fff;
+    color:rgba(255, 255, 255, 0.863);
+    font-weight: normal;
+    line-height: 25px;
     display:flex;
     align-items:flex-start;
     justify-content:flex-start
@@ -223,6 +245,48 @@ section .text-shell .text-block{
 .about-me {
     margin-bottom: 20px;
 }
+
+button {
+    --green: #1BFD9C;
+    font-size: 15px;
+    padding: 0.7em 2.7em;
+    letter-spacing: 0.06em;
+    position: relative;
+    font-family: inherit;
+    border-radius: 0.6em;
+    overflow: hidden;
+    transition: all 0.3s;
+    line-height: 1.4em;
+    border: 2px solid var(--green);
+    background: linear-gradient(to right, rgba(27, 253, 156, 0.1) 1%, transparent 40%,transparent 60% , rgba(27, 253, 156, 0.1) 100%);
+    color: var(--green);
+    box-shadow: inset 0 0 10px rgba(27, 253, 156, 0.4), 0 0 9px 3px rgba(27, 253, 156, 0.1);
+  }
+
+  button .button_text {
+    font-family:Roboto,sans-serif;
+  }
+  
+  button:hover {
+    color: #82ffc9;
+    box-shadow: inset 0 0 10px rgba(27, 253, 156, 0.6), 0 0 9px 3px rgba(27, 253, 156, 0.2);
+  }
+  
+  button:before {
+    content: "";
+    position: absolute;
+    left: -4em;
+    width: 4em;
+    height: 100%;
+    top: 0;
+    transition: transform .4s ease-in-out;
+    background: linear-gradient(to right, transparent 1%, rgba(27, 253, 156, 0.1) 40%,rgba(27, 253, 156, 0.1) 60% , transparent 100%);
+  }
+  
+  button:hover:before {
+    transform: translateX(15em);
+  }
+
 @media (max-width: 745px) {
     .cv {
         background-image: url("https://raw.githubusercontent.com/Bridjes/my_cv/master/assets/img/wall4.jpg");

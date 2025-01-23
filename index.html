@@ -10,10 +10,10 @@
     </head>
     <body class="cv">
         <header data-aos="fade-down" class="head">
-            <div class="photo"><img data-aos="zoom-in" data-aos-delay="200" src="assets/img/Фотка.jpg?h=48a520228b482cc014a6155a3f386938"></div>
+            <div class="photo"><img data-aos="zoom-in" data-aos-delay="200" src="assets/img/ava2.png?h=48a520228b482cc014a6155a3f386938"></div>
             <div class="info">
                 <div data-aos="fade-right" data-aos-delay="400" class="name"><span>Илья Муржин</span></div>
-                <div data-aos="fade-right" data-aos-delay="500" class="speciality"><span>Python-разработчик</span></div>
+                <div data-aos="fade-right" data-aos-delay="500" class="speciality"><span>Системный администратор</span></div>
                 <div class="contacts">
                     <div data-aos="fade-right" data-aos-delay="600" class="contact">
                         <a href="https://t.me/m_Iluha" target="_new" class="tg">
@@ -45,6 +45,11 @@
                             <div>ilya.dcnt@gmail.com</div>
                         </a>
                     </div>
+                    <button onclick="downloadWordFile()">
+                        <div class="button_text">
+                            Скачать в PDF
+                        </div>
+                    </button>
                 </div>
             </div>
         </header>
@@ -53,25 +58,26 @@
             <div class="name"><span>ОБЩИЕ СВЕДЕНИЯ</span></div>
             <div class="text">
                 <span>
-                    Я разработчик на Python, и обладаю обширными знаниями и опытом разработки на фреймворке Django, используя следующий стек технологий:
+                    Я обладаю 4х летним опытом работы системным администратором 
+                    в учреждении с доменной сетью из 195 ПК.
+                    Работал с операционками Windows 7 / 10 / 11, Ubuntu и Windows Server 2016. 
+                    В локальной сети были развёрныт 1С, медицинские информационные системы и разработанное мной ПО.
                     <br>
-                    - Django ORM;
                     <br>
-                    - Django REST Framework;
+                    За время работы мной были разработаны и внедрены ряд программ для оптимизации работы:
                     <br>
-                    - Djoser-authentication;
                     <br>
-                    - JWT-authentication;
+                    - Epicrisis_packer (автоматический сбор, сортировка по номерам поликлиник и 
+                    архивация для последующей отправки). Стек технологий: Python
                     <br>
-                    - Session-based authentication
-                    <br><br>
-                    Также владею знаниями во Flask:
+                    - Deed_collector (раз в месяц "парсит" несколько электронных ящиков, на которые 
+                    приходят акты выполненных работ от субподрядчиков и пересылка их в бухгалтерию). 
+                    Стек технологий: Python, Celery, Docker
                     <br>
-                    - Flask-SQLALChemy
+                    - Dokumentoz (система для формирования служебных записок, пересылки их исполнителям 
+                    и отслеживания их статусов исполнения с напоминаниями через telegram-бот). 
+                    Стек технологий: Python, Django REST Framework, Aiogram, Celery, TypeScript, React, PostgreSQL, Docker.
                     <br>
-                    - Flask-login-authentication
-                    <br><br>
-                    Также есть опыт использования Aiogram совместно с RestAPI в составе одного из проектов созданных мной за время работы во фрилансе.
                 </span>
             </div>
         </section>
@@ -79,24 +85,30 @@
         <section data-aos="fade-up">
             <div class="name"><span>НАВЫКИ</span></div>
             <div class="text-shell">
+                <div class="text-block"><span>Настройка ПК</span></div>
+                <div class="text-block"><span>Администрирование сетевого оборудования</span></div>
+                <div class="text-block"><span>Техническая поддержка</span></div>
+                <div class="text-block"><span>Информационные технологии</span></div>
+                <div class="text-block"><span>Администрирование серверов</span></div>
+                <div class="text-block"><span>Настройка серверов</span></div>
+                <div class="text-block"><span>Windows 7/10/11</span></div>
+                <div class="text-block"><span>Windows Server</span></div>
+                <div class="text-block"><span>Ubuntu</span></div>
+                <div class="text-block"><span>Active Directory</span></div>
+                <div class="text-block"><span>DHCP</span></div>
+                <div class="text-block"><span>Настройка DNS</span></div>
+                <div class="text-block"><span>MySQL</span></div>
+                <div class="text-block"><span>PostgreSQL</span></div>
+                <div class="text-block"><span>Docker</span></div>
                 <div class="text-block"><span>Python</span></div>
-                <div class="text-block"><span>SQLite3</span></div>
-                <div class="text-block"><span>Django</span></div>
-                <div class="text-block"><span>DRF</span></div>
-                <div class="text-block"><span>Djoser</span></div>
-                <div class="text-block"><span>JWT</span></div>
-                <div class="text-block"><span>Flask</span></div>
-                <div class="text-block"><span>Flask-SQLALChemy</span></div>
-                <div class="text-block"><span>Flask-login</span></div>
-                <div class="text-block"><span>Aiogram</span></div>
-                <div class="text-block"><span>RestAPI</span></div>
-                <div class="text-block"><span>ORM</span></div>
-                <div class="text-block"><span>ООП</span></div>
-                <div class="text-block"><span>Jinja2</span></div>
-                <div class="text-block"><span>HTML</span></div>
-                <div class="text-block"><span>CSS</span></div>
-                <div class="text-block"><span>JS</span></div>
-                <div class="text-block"><span>Bootstrap</span></div>
+                <div class="text-block"><span>JavaScript / TypeScript</span></div>
+                <div class="text-block"><span>ELK Stack</span></div>
+                <div class="text-block"><span>Apache Airflow</span></div>
+                <div class="text-block"><span>Celery</span></div>
+                <div class="text-block"><span>Django Rest Framework</span></div>
+                <div class="text-block"><span>React</span></div>
+                <div class="text-block"><span>Hyper-V</span></div>
+                <div class="text-block"><span>VMware</span></div>
             </div>
         </section>
 
@@ -119,9 +131,10 @@
                 <div class="exp-term"><span>февраль 2021 - сейчас</span></div>
                 <div class="exp-description">
                     <span>
-                        Администрирование локальной сети.
+                        Администрирование локальной сети. 
                         Установка и настройка софта.
-                        Администрирование программного комплекса АИС "Клиника".
+                        Ремонт вышедших из строя ПК.
+                        Восстановление данных с вышедших из строя жёстких дисков.
                         Разработка и внедрение средств автоматизации рабочих процессов.
                     </span>
                 </div>
@@ -149,9 +162,8 @@
                 <div class="exp-term"><span>июль 2017 - июнь 2019</span></div>
                 <div class="exp-description">
                     <span>
-                        Разработка принципиальных схем радиоэлектронных аппаратных комплексов.
-                        Установка и настройка прошивок в микроконтроллеры.
-                        Пусконаладка и тестирование оборудования.
+                        Сборка, настройка, диагностика и прошивка радиостанции "АГАТ R801".
+                        Разработка принципиальных схем функциональных блоков.
                     </span>
                 </div>
             </div>
@@ -166,30 +178,26 @@
                 <div class="edu-term"><span>сентябрь 2013 - июнь 2017</span></div>
             </div>
         </div>
-        <div data-aos="fade-up" class="blinds-last">
-                <div class="edu">
-                    <div class="edu-img"><img src="assets/img/over.png?h=48a520228b482cc014a6155a3f386938"></div>
-                    <div class="edu-name"><span>                    IT Overone                </span></div>
-                    <div class="edu-speciality"><span>                    Backend-разработчик                </span></div>
-                    <div class="edu-term"><span>сентябрь 2022 - июль 2023</span></div>
-                </div>
-            </div>
-        </div>
 
         <section data-aos="fade-up" class="about-me">
             <div class="name"><span>О СЕБЕ</span></div>
             <div class="text">
                 <span>
-                    Я Python разработчик, находящийся в поиске хорошей сплочённой команды для совместной работы в интересных проектах.
-                    Обожаю групповую динамику, и быстро осваиваю различные новинки.
-                    Уверенно владею знаниями и опытом применения таких фреймворков как Django, drf и Flask.
-                    Держу в свои скилы в тонусе как в рабочее время, так и в фрилансе.
+                    Я системный администратор с навыками программирования, находящийся в поиске хорошей сплочённой команды для совместной работы в интересных проектах. 
+                    Постоянно держу свои скиллы в тонусе.
                     <br><br>
-                    Мои цели на ближайшее время: через год/два хотел бы дорасти до Middle разработчика, через три/четыре - до Senior
+                    Мои цели на ближайшее время: 
+                    <br><br>
+                    - наладить рабочие процессы до идеала
+                    <br>
+                    - разработать и внедрить свой проект как вклад в развитие команды
+                    <br>
+                    - вырасти как специалист до нового уровня
                 </span>
             </div>
         </section>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
         <script src="assets/js/script.min.js?h=db819411bdb67e9cacbaa56af5f94215"></script>
+        <script src="assets/js/download_file.js"></script>
     </body>
 </html>
